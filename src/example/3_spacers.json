@@ -1,0 +1,73 @@
+{
+    "spacingTypes": [{
+        "identifier": "m",
+        "property": "margin"
+    }, {
+        "identifier": "p",
+        "property": "padding"
+    }],
+
+    "directions": [{
+        "identifier": "v",
+        "property": "vertical"
+    }, {
+        "identifier": "h",
+        "property": "horizontal"
+    }, {
+        "identifier": "t",
+        "property": "top"
+    }, {
+        "identifier": "r",
+        "property": "$right"
+    }, {
+        "identifier": "b",
+        "property": "bottom"
+    }, {
+        "identifier": "l",
+        "property": "$left"
+    }, {
+        "identifier": "a",
+        "property": "all"
+    }],
+
+    "sizes": [{
+        "identifier": "0x",
+        "val": "0"
+    }, {
+        "identifier": "1x",
+        "val": "4px"
+    }, {
+        "identifier": "2x",
+        "val": "8px"
+    }, {
+        "identifier": "3x",
+        "val": "12px"
+    }, {
+        "identifier": "4x",
+        "val": "16px"
+    }, {
+        "identifier": "5x",
+        "val": "20px"
+    }, {
+        "identifier": "6x",
+        "val": "24px"
+    }, {
+        "identifier": "7x",
+        "val": "28px"
+    }, {
+        "identifier": "8x",
+        "val": "32px"
+    }, {
+        "identifier": "9x",
+        "val": "36px"
+    }, {
+        "identifier": "10x",
+        "val": "40px"
+    }, {
+        "identifier": "11x",
+        "val": "44px"
+    }, {
+        "identifier": "12x",
+        "val": "48px"
+    }]
+}

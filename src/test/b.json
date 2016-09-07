@@ -1,0 +1,26 @@
+{
+	"color-shade-list": {
+		"c-b-1": "#FFF",
+		"c-b-2": "#E0E0E0",
+		"c-b-3": "#D1D1D1",
+		"c-b-4": "#C2C2C2",
+		"c-b-5": "#B3B3B3",
+		"c-b-6": "#A4A4A4"
+	},
+	"size-list": [{
+		"title": "bp1",
+		"value": "342px"
+	}, {
+		"title": "bp2",
+		"value": "540px"
+	}, {
+		"title": "bp3",
+		"value": "768px"
+	}, {
+		"title": "bp4",
+		"value": "1024px"
+	}, {
+		"title": "bp5",
+		"value": "1280px"
+	}]
+}

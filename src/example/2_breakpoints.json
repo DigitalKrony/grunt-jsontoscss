@@ -1,0 +1,17 @@
+{
+	"vp1": "320px",
+	"vp2": "540px",
+	"vp3": "768px",
+	"vp4": "1084px",
+	"vp5": "1400px",
+	"vp6": "1779px",
+
+	"breakpoints": [
+		{"identifier": "vp1", "val": "320px"},
+		{"identifier": "vp2", "val": "540px"},
+		{"identifier": "vp3", "val": "768px"},
+		{"identifier": "vp4", "val": "1084px", "var": "$vp4"},
+		{"identifier": "vp5", "val": "1400px", "var": "$vp5"},
+		{"identifier": "vp6", "val": "1779px", "var": "$vp6"}
+	]
+}

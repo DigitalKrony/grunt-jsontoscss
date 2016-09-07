@@ -1,0 +1,57 @@
+@import "variable_map";
+
+@mixin spacer($space: margin, $direction: vertical, $size: m) {
+    @if $direction==vertical {
+        #{$space}-top: $size;
+        #{$space}-bottom: $size;
+    }
+    @else if $direction==horizontal {
+        #{$space}-#{left}: $size;
+        #{$space}-#{right}: $size;
+    }
+    @else if $direction==all {
+        #{$space}: $size;
+    }
+    @else {
+        #{$space}-#{$direction}: $size;
+    }
+}
+
+// Spacers (margin & padding)
+@each $type in $spacingTypes {
+    @each $dir in $directions {
+        @each $size in $sizes {
+            .x-#{map-get($type, identifier)} {
+                &-#{map-get($dir, identifier)} {
+                    &-#{map-get($size, identifier)} {
+                        @include spacer(map-get($type, property), map-get($dir, property), map-get($size, val));
+
+                        @each $breakpoint in $breakpoints {
+                            @media screen and ( min-width: map-get($breakpoint, val) ) {
+                                &-#{map-get($breakpoint, identifier)}-up {
+                                    @include spacer(map-get($type, property), map-get($dir, property), map-get($size, val));
+                                }
+                            }
+
+                            @media screen and ( max-width: map-get($breakpoint, val) ) {
+                                &-#{map-get($breakpoint, identifier)}-down {
+                                    @include spacer(map-get($type, property), map-get($dir, property), map-get($size, val));
+                                }
+                            }
+                        }
+
+                        @for $i from 1 through length($breakpoints)-1 {
+                            $c: nth($breakpoints, $i);
+                            $e: nth($breakpoints, $i+1);
+                            @media screen and ( min-width: map-get($c, val )) and ( max-width: map-get($e, val) ) {
+                                &-#{map-get($c, identifier)} {
+                                    @include spacer(map-get($type, property), map-get($dir, property), map-get($size, val));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

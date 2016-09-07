@@ -1,0 +1,5 @@
+{
+	"color-a": "rgb(240,40,60)",
+	"size-a": "24px",
+	"var-a": "rgba($color-a, 0.5)"
+}
