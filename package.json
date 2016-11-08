@@ -1,8 +1,8 @@
 {
     "name": "jsonToSass",
     "description": "Convert JSON files to SASS Variables and Variable Maps",
-    "version": "1.0.0",
-    "homepage": "",
+    "version": "0.1.3",
+    "homepage": "https://github.com/DigitalKrony/jsonToSass",
     "author": [{
         "name": "Adam Sivins",
         "email": "adamsiv@microsoft.com"
@@ -12,10 +12,10 @@
     }],
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/DigitalKrony/jsonToSass"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/DigitalKrony/jsonToSass/issues"
     },
     "licenses": [{
         "type": "MIT",
@@ -34,30 +34,21 @@
         "grunt-contrib-nodeunit": "^0.3.3"
     },
     "peerDependencies": {
-        "grunt": "~0.4.5"
+        "grunt": "~0.4.0"
     },
     "keywords": [
         "gruntplugin",
         "json",
-        "sass"
+        "sass",
+        "scss"
     ],
     "files": [
         "tasks",
         "LICENSE-MIT"
     ],
-    "gitHead": "",
-    "_id": "",
-    "_shasum": "",
-    "_from": "",
-    "_npmVersion": "",
-    "_nodeVersion": "",
     "_npmUser": {
         "name": "digitalkrony",
-        "email": ""
-    },
-    "dist": {
-        "shasum": "",
-        "tarball": ""
+        "email": "chiefspork@gmail.com"
     },
     "maintainers": [{
         "name": "Adam Sivins",

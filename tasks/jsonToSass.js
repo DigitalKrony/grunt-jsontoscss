@@ -93,9 +93,7 @@ var parseObject = function(o) {
     return m;
 };
 
-var parseStringOrNumber = function(o) {
-    return o;
-};
+var parseStringOrNumber = function(o) { return o; };
 
 var doWhat = function(what, isNested) {
     var whatFunction, //This selects the type of funciton used to parse the data

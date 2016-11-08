@@ -15,7 +15,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         assemble: {
             example: {
-                
                 files: {
                     './dest': ['./src/example/*.hbs']
                 }

@@ -3,18 +3,18 @@
 > Convert JSON formatted files into SASS variable Maps
 
 ## Getting Started
-This plugin Requires Grunt '~0.4.5'
+This plugin Requires Grunt '~0.4.0'
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ``` bash
-$ npm install grunt-jsonToSass --save-dev
+$ npm install jsonToSass --save-dev
 ```
 
 After installing the plugin, enable it by adding the NPM load tast to your 'gruntfile.js'
 
 ```  bash
-grunt.loadNpmTast('grunt-jsonToSass);
+grunt.loadNpmTast('jsonToSass');
 ```
 
 ## Setting up the jsonToSass task
