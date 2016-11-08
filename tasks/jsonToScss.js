@@ -8,7 +8,7 @@
 module.exports = function(grunt) {
     var DESC = "The things that it does!";
 
-    grunt.registerMultiTask('jsonToSass', DESC, function() {
+    grunt.registerMultiTask('jsonToScss', DESC, function() {
         this.files.map(function(file) {
             return {
                 src: file.src.filter(function(fileSrc) {
