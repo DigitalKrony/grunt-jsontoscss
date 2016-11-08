@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         },
 
         // Configuration to be run (and then tested).
-        jsonToSass: {
+        jsonToScss: {
             dev: {
                 files: {
                     'dest/dev/dev_test.scss': ['./src/test/*.json']
@@ -95,14 +95,14 @@ module.exports = function(grunt) {
     grunt.loadTasks('tasks');
 
     // Dev plugins (not required for use).
-    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-assemble');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-sass');
 
     // List of Dev Tasks. Clean, Build, Test.
-    grunt.registerTask('default', ['clean:dest', 'jsonToSass:dev']);
+    grunt.registerTask('default', ['clean:dest', 'jsonToScss:dev']);
 
-    grunt.registerTask('build', ['clean:dest', 'jsonToSass:example', 'copy:example', 'sass:example', 'clean:temp', 'assemble:example'])
+    grunt.registerTask('build', ['clean:dest', 'jsonToScss:example', 'copy:example', 'sass:example', 'clean:temp', 'assemble:example'])
 
 };
